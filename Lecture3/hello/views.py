@@ -5,4 +5,13 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse("Hello World")
+    # return HttpResponse("Hello World")
+    return render(request, "hello/index.html")
+
+
+def name(request):
+    return HttpResponse("Hello, Name")
+
+
+def greet(request, name):
+    return HttpResponse(f"Hello, {name}")
