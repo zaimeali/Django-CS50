@@ -7,7 +7,8 @@ Add Task
 {% block body %}
 <form action="{% url 'tasks:add' %}" method="POST">
     {% csrf_token %}
-    <input type=" text" name="task">
+    <!-- <input type=" text" name="task"> -->
+    {{ form }}
     <input type="submit" value="Add Task">
 </form>
 
