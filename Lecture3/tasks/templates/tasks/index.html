@@ -8,6 +8,8 @@ Tasks
 <ul>
     {% for task in tasks %}
     <li>{{ task }}</li>
+    {% empty %}
+    <li>No Task Found</li>
     {% endfor %}
 </ul>
 
